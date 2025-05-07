@@ -1,0 +1,204 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    background-color: #fefefe;
+    color: #333;
+    scroll-behavior: smooth;
+}
+header {
+    background-color: #ffe4e1;
+    text-align: center;
+    padding: 2em 1em;
+    border-bottom: 4px solid #f9c0c0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em; 
+header img.logo {
+    width: 60px; /* Ajusta el tamaño del logo */
+    height: 60px;
+    border-radius: 50%; /* Hace el logo redondo */
+    object-fit: cover; /* Asegura que el logo no se distorsione */
+}
+h1 {
+    font-size: 2.2em;
+    margin: 0;
+}
+.subtitle {
+    font-style: italic;
+    color: #7d5a5a;
+}
+.author {
+    font-size: 0.95em;
+    color: #666;
+}
+/* Navigation */
+nav {
+    background-color: #faf0e6;
+    padding: 1em;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+nav a {
+    margin: 0 1em;
+    text-decoration: none;
+    color: #b48eae;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+nav a:hover {
+    color: #da7fa4;
+}
+/* Main content */
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2em 1.5em;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+/* Fondo de la imagen en las secciones */
+main section {
+    background-image: url('fondo.jpg'); /* Ruta de la imagen de fondo */
+    background-size: cover; /* Asegura que la imagen cubra toda la sección */
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 8px;
+    padding: 1.5em;
+    margin-bottom: 2em; /* Espacio entre secciones */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+/* Títulos principales (h2) en colores pastel */
+h2:nth-of-type(1) {
+    color: #fc93ab; /* Rosado pastel */
+    border-bottom: 2px solid #f9ccd4;
+    padding-bottom: 0.3em;
+}
+/* Títulos principales (h2) más destacados */
+h2 {
+    background-color: #975f80; /* Fondo rosado suave */
+    border-left: 6px solid #f312bb8f; /* Línea decorativa lateral */
+    padding: 0.75em 2em;
+    border-radius: 10px;
+    color: #b03e6f;
+    font-size: 1.8em;
+    margin-top: 2em;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+h2:nth-of-type(2) {
+    color: #87cba3; /* Verde menta */
+    border-bottom: 2px solid #c8ecd8;
+    padding-bottom: 0.3em;
+}
+h2:nth-of-type(3) {
+    color: #94c4ec; /* Celeste pastel */
+    border-bottom: 2px solid #d4e9f8;
+    padding-bottom: 0.3em;
+}
+h2:nth-of-type(4) {
+    color: #c6a0dd; /* Lavanda pastel */
+    border-bottom: 2px solid #e8d9f2;
+    padding-bottom: 0.3em;
+}
+/* Subtítulos h3 */
+/* Subtítulos h3 con fondo azul claro y borde */
+h3 {
+    background-color: #dceeff; /* Azul pastel */
+    border: 2px solid #a3d2f2; /* Borde azul más fuerte */
+    padding: 0.75em 1em;
+    border-radius: 8px;
+    color: #234f7d;
+    margin-top: 1.5em;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+  
+ul {
+    padding-left: 1.5em;
+}
+/* Enfasis */
+strong {
+    color: #444;
+}
+/* Imagen */
+figure {
+    margin: 1em 0;
+    text-align: center;
+}
+figure img {
+    max-width: 50%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+figcaption {
+    font-size: 0.9em;
+    color: #555;
+    margin-top: 0.5em;
+}
+/* Nota final */
+.final-note {
+    margin-top: 2em;
+    padding: 1em;
+    background-color: #f0f8ff;
+    border-left: 5px solid #7ec8e3;
+    font-style: italic;
+}
+/* Buscador debajo del título principal */
+.search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1em 0;
+    gap: 10px;
+}
+
+.search-box {
+    padding: 8px 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    width: 250px;
+}
+
+.search-button {
+    padding: 8px 16px;
+    font-size: 16px;
+    background-color: #b48eae;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.search-button:hover {
+    background-color: #da7fa4;
+}
+/* Estilos responsivos para móviles */
+@media (max-width: 600px) {
+    .search-container {
+        flex-direction: column;
+        align-items: stretch;
+        padding: 0 1em;
+    }
+
+    .search-box {
+        width: 100%;
+        font-size: 16px;
+    }
+
+    .search-button {
+        width: 100%;
+        font-size: 16px;
+    }
+
+    header {
+        flex-direction: column;
+        gap: 0.5em;
+    }
+
+    header img.logo {
+        margin-bottom: 0.5em;
+    }
+}
